@@ -26,7 +26,7 @@ const RegisterProvider = ({ children }: RegisterProps) => {
 
   const Register = (user: User) => {
     axios
-      .post("http://localhost:3001/users", user)
+      .post("https://burguer-shop.herokuapp.com/users", user)
       .then((response) => {
         localStorage.setItem("token", response.data.acessToken);
         navigate("/home");

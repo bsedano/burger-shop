@@ -23,7 +23,7 @@ const AuthProvider = ({ children }: AuthContextProps) => {
 
   const Login = (user: User) => {
     axios
-      .post("http://localhost:3001/login", user)
+      .post("https://burguer-shop.herokuapp.com/login", user)
       .then((response) => {
         localStorage.setItem("token", response.data.acessToken);
 

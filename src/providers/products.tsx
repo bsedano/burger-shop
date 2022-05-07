@@ -45,7 +45,7 @@ const ProductsProvider = ({ children }: ProductsProps) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/products")
+      .get("https://burguer-shop.herokuapp.com/products")
       .then((response) => setProducts(response.data))
       .then((err) => console.log(err));
   }, []);
