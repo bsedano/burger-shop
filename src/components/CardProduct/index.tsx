@@ -33,24 +33,20 @@ const CardProduct = ({ product, type }: Product) => {
   const { name, price, img, category } = product;
   return (
     <VStack
-      bgColor={"green.400"}
+      bgColor={"rgba( 11, 11, 11, 0.8 )"}
       m={4}
       justify={"space-between"}
       w={"350px"}
       minW={"350px"}
+      rounded="xl"
       h={"370px"}
-      _hover={{
-        cursor: "pointer",
-        border: "2px solid green",
-      }}
-      border={"2px solid white"}
       textAlign={"center"}
       fontFamily={"Inter"}
       textShadow={"0px 0px 3px black"}
       color={"honeydew"}
-      boxShadow={"0px 0px 10px black"}
+      boxShadow={"0 8px 32px 0 green.600"}
     >
-      <Center bgColor={"green.400"} w={"100%"}>
+      <Center w={"100%"}>
         <Img
           src={img}
           alt={name}
@@ -69,10 +65,8 @@ const CardProduct = ({ product, type }: Product) => {
         <Button
           colorScheme={"green"}
           w={"100%"}
-          borderRadius={"0px"}
           fontFamily={"Inter"}
           onClick={() => addCart(product)}
-          borderTop={"1px solid white"}
         >
           Adicionar
         </Button>
@@ -81,11 +75,10 @@ const CardProduct = ({ product, type }: Product) => {
           w={"100%"}
           justifyContent={"space-between"}
           bgColor={"orange.500"}
-          borderTop={"1px solid white"}
+          rounded={"xl"}
         >
           <IconButton
             aria-label="remove item"
-            borderRadius={"0px"}
             fontFamily={"Inter"}
             colorScheme={"orange"}
             onClick={() => removeCart(product)}
@@ -94,7 +87,6 @@ const CardProduct = ({ product, type }: Product) => {
           <Text fontFamily={"Inter"}>{product.quantity}</Text>
           <IconButton
             aria-label="Add to cart"
-            borderRadius={"0px"}
             fontFamily={"Inter"}
             colorScheme={"orange"}
             onClick={() => addCart(product)}
