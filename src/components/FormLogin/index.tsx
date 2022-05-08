@@ -47,10 +47,10 @@ const FormLogin = () => {
   return (
     <VStack
       p={4}
-      boxShadow={"0px 0px 20px black"}
+      boxShadow={"0 8px 10px 0 black"}
       w={"40%"}
       minW={"350px"}
-      bgColor={"blackAlpha.800"}
+      bgColor={"rgba( 11, 11, 11, 0.8 )"}
       rounded={"xl"}
     >
       <FormControl
@@ -118,7 +118,7 @@ const FormLogin = () => {
           w={"100%"}
           m={2}
           fontSize={"1.2rem"}
-          boxShadow={"0px 0px 10px black"}
+          boxShadow={"0 8px 10px 0 black"}
           textShadow={"0px 0px 2px black"}
           type={"submit"}
         >
@@ -131,7 +131,7 @@ const FormLogin = () => {
           onClick={() => navigate("/register")}
           m={2}
           fontSize={"1.2rem"}
-          boxShadow={"0px 0px 10px black"}
+          boxShadow={"0 8px 10px 0 black"}
           textShadow={"0px 0px 2px black"}
         >
           Cadastrar

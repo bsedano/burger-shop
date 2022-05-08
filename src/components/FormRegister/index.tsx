@@ -60,10 +60,10 @@ const FormRegister = () => {
   return (
     <VStack
       p={4}
-      boxShadow={"0px 0px 20px black"}
+      bgColor={"rgba( 11, 11, 11, 0.8 )"}
       w={"40%"}
       minW={"350px"}
-      bgColor={"blackAlpha.800"}
+      boxShadow={"0 8px 10px 0 black"}
       rounded={"xl"}
     >
       <FormControl
@@ -162,7 +162,7 @@ const FormRegister = () => {
           colorScheme={"green"}
           w={"100%"}
           m={2}
-          boxShadow={"0px 0px 10px black"}
+          boxShadow={"0 8px 10px 0 black"}
           textShadow={"0px 0px 2px black"}
           fontSize={"1.2rem"}
           type={"submit"}
@@ -176,7 +176,7 @@ const FormRegister = () => {
           w={"100%"}
           onClick={() => navigate("/")}
           m={2}
-          boxShadow={"0px 0px 10px black"}
+          boxShadow={"0 8px 10px 0 black"}
           fontSize={"1.2rem"}
         >
           Voltar

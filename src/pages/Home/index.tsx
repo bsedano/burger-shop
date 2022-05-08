@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import CardProduct from "../../components/CardProduct";
 import { motion } from "framer-motion";
 
-import bg from "../../assets/images/4486959.jpg";
+import bg from "../../assets/images/bg2.jpg";
 import { useEffect } from "react";
 const Home = () => {
   const navigate = useNavigate();

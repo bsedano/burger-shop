@@ -44,7 +44,7 @@ const CardProduct = ({ product, type }: Product) => {
       fontFamily={"Inter"}
       textShadow={"0px 0px 3px black"}
       color={"honeydew"}
-      boxShadow={"0 8px 32px 0 green.600"}
+      boxShadow={"0 0px 10px 0 black"}
     >
       <Center w={"100%"}>
         <Img

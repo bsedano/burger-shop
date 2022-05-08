@@ -24,6 +24,7 @@ import {
 } from "@chakra-ui/react";
 import drawer from "../../assets/images/drawer.gif";
 import InputSearch from "../InputSearch";
+import logoburguer from "../../assets/images/logoburguer.png";
 import { IoMdExit } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useCart } from "../../providers/cart";
@@ -49,14 +50,15 @@ const Header = () => {
     <HStack
       as="header"
       w={"100%"}
-      bgColor={"blackAlpha.900"}
-      p={8}
+      bgColor={"rgba( 11, 11, 11, 0.9 )"}
+      p={4}
       justify={"space-between"}
-      boxShadow={"0px 0px 20px black"}
+      boxShadow={"0 8px 10px 0 black"}
     >
-      <Box>
+      <HStack>
+        <Img src={logoburguer} h={"80px"} display={["none", "block"]} />
         <Heading
-          fontFamily={"Inter"}
+          fontFamily={"Bangers"}
           color={"honeydew"}
           textShadow={"0px 0px 5px black"}
           fontSize={["2xl", "3xl", "4xl"]}
@@ -67,7 +69,7 @@ const Header = () => {
           </Text>
           Shop
         </Heading>
-      </Box>
+      </HStack>
 
       <HStack spacing={6}>
         <InputSearch />
@@ -91,7 +93,7 @@ const Header = () => {
 
         <Drawer isOpen={isOpen} placement="right" onClose={onClose} size={"md"}>
           <DrawerOverlay />
-          <DrawerContent>
+          <DrawerContent boxShadow={"0 8px 10px 0 black"}>
             <DrawerCloseButton color={"white"} />
             <DrawerHeader
               fontFamily={"Inter"}

@@ -10,9 +10,9 @@ const IndexHeader = ({ ...rest }) => {
       w={"40%"}
       justify={"center"}
       minW={"350px"}
-      bgColor={"blackAlpha.800"}
+      boxShadow={"0 8px 10px 0 black"}
       p={4}
-      boxShadow={"0px 0px 20px black"}
+      bgColor={"rgba( 11, 11, 11, 0.8 )"}
       {...rest}
       rounded={"xl"}
     >
