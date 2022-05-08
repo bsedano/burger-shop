@@ -7,6 +7,7 @@ import {
   Center,
   HStack,
   IconButton,
+  Badge,
 } from "@chakra-ui/react";
 import { useCart } from "../../providers/cart";
 import { AiFillPlusCircle, AiFillMinusCircle } from "react-icons/ai";
@@ -54,9 +55,10 @@ const CardProduct = ({ product, type }: Product) => {
           _hover={{ cursor: "pointer", transform: "scale(1.1)" }}
         />
       </Center>
-      <Heading fontFamily={"Inter"} color={"orange.200"}>
+      <Heading fontFamily={"Inter"} color={"orange.200"} fontSize={"2xl"}>
         {name}
       </Heading>
+     
       <Text color={"orange.200"}>{category}</Text>
       <Text color={"orange.200"} fontSize={"xl"}>
         {formatPrice(price)}

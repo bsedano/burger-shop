@@ -79,9 +79,9 @@ const Header = () => {
             color={"honeydew"}
             w={8}
             h={8}
-            _hover={{ cursor: "pointer", transform: "scale(1.1)" }}
+            _hover={{ cursor: "pointer" }}
             onClick={onOpen}
-            marginRight={"-20px"}
+            marginRight={-2}
           />
 
           <Center w={5} h={5} bgColor={"green.500"} borderRadius={"100%"}>

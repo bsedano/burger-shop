@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, ReactNode } from "react";
-
+import { toast } from "react-toastify";
 interface CartProps {
   children: ReactNode;
 }
@@ -29,6 +29,14 @@ const CartProvider = ({ children }: CartProps) => {
 
   const addCart = (product: Product) => {
     if (!cart.includes(product)) {
+      toast.success(`${product.name} foi adicionado ao carrinho`, {
+        position: "top-right",
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
       setCart([...cart, product]);
     } else {
       product.quantity += 1;
@@ -48,6 +56,7 @@ const CartProvider = ({ children }: CartProps) => {
   };
 
   const clearCart = () => {
+    cart.forEach((product) => (product.quantity = 1));
     setCart([]);
     localStorage.removeItem("cart");
   };
