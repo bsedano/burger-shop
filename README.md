@@ -4,7 +4,7 @@
 
 # If you want to run the application on a different port, you can use the --port flag.
 
-# Application was made using Typescript, ContextApi to manage global states, Axios to make API requests and ChakraUI to style and create components.
+# Application was made using TypeScript and React, Axios for API requests, ContextApi for managing global states, ChakraUI for styling and component creation, yup and hookform for form validation and Toasfity for notifications.
 
 # Also, I created my own api using json-server and deploying it to heroku.
 # Link to the application: https://burger-shop-bsedano.vercel.app/
